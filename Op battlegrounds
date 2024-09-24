@@ -1,0 +1,14 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()                      local Window = Library.CreateLib("Op Battlegrounds", "DarkTheme")         local Tab = Window:NewTab("MoveSets")                                   local Section = Tab:NewSection("MoveSets")                      Section:NewButton("HollowPurpleBig", "ButtonInfo", function() local args = {
+    [1] = "HollowPurpleBig"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Gojo:FireServer(unpack(args))
+    print("Clicked")
+end)                                                                                                    Section:NewButton("FireArrow👹👹", "Sukuna", function() local args = {
+    [1] = "FireArrow"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Yuji:FireServer(unpack(args))
+
+    print("Clicked")
+end)
